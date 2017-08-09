@@ -3,18 +3,18 @@
 ## Introductions
 
 Bonjour et ravi de faire votre connaissance, appelez-moi professeur Franklin Risby. Étant
-supposé vous apprendre un peu de programmation fonctionnelle, nous allons être amené à passer
-quelques temps ensemble. Assez parlé de moi, qu'en est-il de vous ? J'espère que vous êtes
+supposé vous apprendre un peu de programmation fonctionnelle, nous allons être amenés à passer
+quelque temps ensemble. Assez parlé de moi, qu'en est-il de vous ? J'espère que vous êtes
 relativement à l'aise avec le JavaScript, que vous avez ne serait-ce que de vagues notions sur
 l'orienté objet, et que vous aspirez d'ores-et-déjà à devenir un meilleur développeur. Un
 doctorat en Entomologie n'est pas nécessaire, toutefois il vaut mieux que vous sachiez comment
 dénicher et exterminer des bugs.
 
 Je ne ferai aucune supposition a priori sur vos éventuelles expériences passées en
-programmation fonctionnelle car nous savons tout deux ce qu'il advient en pareil cas.
-Néanmoins, j'espére que vous vous êtes déjà heurtés aux problèmes qui surgissent lorsque l'on
+programmation fonctionnelle car nous savons tous deux ce qu'il advient en pareil cas.
+Néanmoins, j'espère que vous vous êtes déjà heurté aux problèmes qui surgissent lorsque l'on
 joue avec des objets mutables, des effets de bords non contrôlés et une archictecture
-chancelante. Présentations faites, rentrons maintenant dans le vif du sujet.
+chancelante. Présentations faites, entrons maintenant dans le vif du sujet.
 
 L'objectif de ce chapitre est de vous faire toucher du doigt ce que l'on recherche au travers
 de la programmation fonctionnelle. Nous devons nous faire une idée de ce qu'un programme
@@ -22,8 +22,8 @@ de la programmation fonctionnelle. Nous devons nous faire une idée de ce qu'un 
 une bien triste fin me direz vous. Ce qu'il nous faut, c'est un objectif clair vers lequel
 s'orienter, sorte de compas céleste nous guidant à travers une mer agitée. 
 
-De fait, il existe des préceptes généraux, divers astuces de grands sages qui nous aideront á
-travers les couloirs parfois sombres de n'importe quelle application: DRY (don't repeat
+De fait, il existe des préceptes généraux, diverses astuces de grands sages qui nous aideront
+à travers les couloirs parfois sombres de n'importe quelle application: DRY (don't repeat
 yourself, littéralement "ne vous répétez pas"), découplage et cohésion, YAGNI (ya ain't gonna
 need it, littéralement "pas b'soin d'ça"), principe de la moindre surprise, responsabilité
 unique, etc.
@@ -31,7 +31,7 @@ unique, etc.
 Je ne cherche pas à faire l'étalage de mes dernières découvertes... la plupart sont étroitement
 liées aux concepts que nous allons manipuler et nous aurons fatalement à les aborder. En
 revanche, ce que j'aimerais que vous ressentiez avant d'aller plus loin, c'est la démarche qui
-sera la notre, notre utopie fonctionnelle.
+sera la nôtre, notre utopie fonctionnelle.
 
 <!--BREAK-->
 
@@ -75,10 +75,10 @@ Seigneur, le résultat est incorrect ! Cela devrait être `16` mais l'appel de m
 l'anarchie dans le code ! Rien de plus qu'une bête sauvage arithmétique. 
 
 Si vous ne comprenez pas ce bout de programme, c'est pardonné car moi non plus. Le principal
-soucis c'est que les états et les valeurs mutables sont durs à suivre même sur un exemple aussi
+souci c'est que les états et les valeurs mutables sont durs à suivre même sur un exemple aussi
 trivial. 
 
-Essayons de nouveau avec cette fois, une approche plus fonctionnelle:
+Essayons de nouveau avec, cette fois, une approche plus fonctionnelle:
 
 ```js 
 var conjoin = function(flock_x, flock_y) { 
@@ -143,7 +143,7 @@ multiply(x, add(y,z)) == add(multiply(x, y), multiply(x, z));
 Ah oui au fait, ces vieilles mais fidèles propriétés mathématiques vont s'avérer fort utiles à
 partir de maintenant. Ne vous inquiétez pas si vous ne les connaissez pas sur le bout des
 doigts. Pour la plupart d'entre-nous, il s'agit là d'un lointain souvenir. Voyons toutefois en
-quoi peuvent-elles rendre nos histoires de mouettes plus simple.
+quoi elles peuvent rendre nos histoires de mouettes plus simples.
 
 ```js 
 // Ligne d'origine
@@ -177,7 +177,7 @@ C'est peut-être suprenant de se dire que l'on peut écrire des applications "no
 même principes fonctionnels vus plus haut. Des applications pointues. Des programmes concis,
 cependant peu évidents à se représenter. Ou encore de simples applications qui ne réinventent
 pas la roue. L'anarchie a son intérêt si vous êtes un criminel, toutefois dans ce livre, nous
-souhaitons embrasser et obéir les lois des Mathématiques. 
+souhaitons embrasser et obéir aux lois des Mathématiques. 
 
 Ce que nous voulons, c'est une théorie au sein de laquelle chaque pièce semble s'emboîter
 parfaitement. Nous souhaitons représenter des problèmes particuliers à partir de méthodes
@@ -188,6 +188,6 @@ s'agit de tout ce qui n'est pas de la programmation fonctionnelle], mais les bé
 approche fonctionnelle au sein d'une théorie mathématique vous laisserons sans voix.  
 
 Nous avons légèrement fait briller notre étoile dans un univers fonctionnel, mais il nous reste
-quelques concepts clés à aborder avant de réellement entâmer notre aventure. 
+quelques concepts clés à aborder avant de réellement entamer notre aventure. 
 
 [Chapitre 2: Les fonctions dites First-Class](ch2.md)
