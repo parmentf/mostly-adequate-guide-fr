@@ -9,26 +9,28 @@ davantage impératif.  Toutefois, je crois sincèrement que l'apprentissage de l
 fonctionnelle par ce biais présente de nombreux avantages:
 
 - **Vous l'utilisez quotidiennement au boulot**
+
     La mise en application des connaissances théoriques que vous allez acquérir peut être
-    faites sur des projets réels et complets plutôt que sur de petites séances nocturnes au
+    faite sur des projets réels et complets plutôt que sur de petites séances nocturnes au
     moyen d'un quelconque langage fonctionnel plus ou moins ésotérique. 
 
 - **Nullement besoin de se familiariser avec les bases du langage pour commencer**
+
     Avec un langage fonctionnel pur, vous ne pouvez espérer afficher une variable ou lire un
-    élément du DOM sans avoir recours aux monads. Ici, on triche légèrement; on apprend à
+    élément du DOM sans avoir recours aux monades. Ici, on triche légèrement; on apprend à
     purifier notre code au fur et à mesure. De plus, il sera toujours plus facile de retomber
     sur ses pattes en cas de nécessité dans la mesure où nous évoluerons dans un paradigme
     mixte. 
 
 - **Ce langage est clairement apte à écrire du code fonctionnel de haute qualité**
 
-    Toutes les fonctionnalités du Scala ou de l'Haskell peuvent être amenées avec l'aide d'une
-    ou deux petites bibliothèques. La programmation orientée objet 'classique' domine
+    Toutes les fonctionnalités de Scala ou d'Haskell peuvent être amenées avec l'aide d'une
+    ou deux petites bibliothèques. La programmation orientée objet "classique" domine
     majoritairement l'industrie mais convient assez mal au JavaScript. Autant camper au
     milieu d'une autoroute ou tenter de faire des claquettes en ballerines. Il faut avoir
     recourt à des `bind` intempestifs afin de garder `this` sous contrôle; il n'y a pour
     l'instant pas de notion de classes, et quand bien même, il nous faut mettre en oeuvre des
-    astuces pour pallier aux conséquences subtilement suprenantes d'un éventuel oubli du
+    astuces pour pallier aux conséquences subtilement surprenantes d'un éventuel oubli du
     mot-clé `this`. De plus, la notion d'attributs privés passe par l'utilisation de
     *closures*. Voilà pourquoi pour bon nombre d'entre-nous, le paradigme fonctionnel apparaît
     comme bien plus naturel. 
@@ -83,5 +85,5 @@ gitbook mobi . ./functional.mobi
   concrète.
 
 - **La dernière partie** sera à cheval entre le savoir pratique et les absurdités académiques.
-  Nous traiterons des comonades, des f-algebres, des monades libres, du lemme de Yoneda et
+  Nous traiterons des comonades, des f-algèbres, des monades libres, du lemme de Yoneda et
   d'autres éléments propres à la théorie des catégories.
