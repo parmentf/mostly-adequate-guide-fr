@@ -4,8 +4,8 @@
 Lorsque l'on dit que les fonctions sont "first class" (littéralement, de premier ordre), on
 veut simplement dire qu'elles sont comme tout le monde... c'est-à-dire normales [^prof ?]. On
 peut traiter les fonctions comme n'importe quel autre type de données et elles n'ont pas de
-comportement particulier - faites-en ce que vous voulez, stockez-les dans une liste, passez-les
-en arguments, assignez-les à des variables.
+comportement particulier - faites-en ce que vous voulez, stockez les dans une liste, passez les
+en arguments, assignez les à des variables.
 
 Il s'agit là des bases du JavaScript mais force est de constater l'ignorance ou bien simplement
 le rejet du concept par bon nombre de sources visibles sur GitHub. Devrions-nous fournir
@@ -58,7 +58,7 @@ En outre, il existe cette détestable pratique verbeuse qui consiste à envelopp
 avec une autre dans le simple but d'en retarder l'évaluation. (Nous verrons pourquoi dans
 quelques temps, mais il s'agit là de problèmes de maintenabilité).
 
-Soyez-bien certain d'avoir saisi toute l'ampleur du propos avant d'aller plus loin; regardons
+Soyez bien certain d'avoir saisi toute l'ampleur du propos avant d'aller plus loin; regardons
 quelques exemples supplémentaires tirés tout droit de modules npm.
 
 ```js
@@ -144,7 +144,7 @@ naïvement nos vues et notre base de données.
 
 Bien, abordons maintenant quelques points qui font des fonctions de premier ordre un choix
 privilégié. Comme nous venons de le voir dans les exemples `getServerStuff` et
-`BlogController`, il est très facile d'ajouter des niveaux d'indirections dépourvus de toute
+`BlogController`, il est très facile d'ajouter des niveaux d'indirection dépourvus de toute
 valeur sémantique et qui rendent tout bonnement le code plus complexe.
 
 De plus, si l'une des fonctions encapsulées est amenée à changer, c'est toute la fonction
@@ -201,7 +201,7 @@ En désignant des choses par un nom nous nous lions implicitement à un certain 
 (`articles` dans ce cas). Cela arrive très souvent et est une source de répétitions. 
 
 Je souhaite aussi vous avertir qu'en raison du caractère orienté-objet du JavaScript, vous
-devez préter attention à `this` qui pourrait bien vous sauter à la gorge en moment innoportun.
+devez prêter attention à `this` qui pourrait bien vous sauter à la gorge en moment inopportun.
 Si une fonction fait référence à `this` et qu'on l'utilise comme une fonction de premier ordre,
 on est sujet à de sévères déconvenues.
 
@@ -218,7 +218,7 @@ fs.readFile('freaky_friday.txt', Db.save.bind(Db));
 
 En associant le contexte d'exécution à `Db` lui-même, on permet à la fonction d'accéder à son
 prototype. J'évite au possible l'utilisation de `this`. Il n'y en a pas besoin en programmation
-fonctionnelle. Cependant, en intéragissant avec des ressources externes vous vous y
+fonctionnelle. Cependant, en interagissant avec des ressources externes vous vous y
 confronterez de toutes les manières les plus farfelues.
 
 Ceci étant dit, nous pouvons désormais passer au niveau suivant.
