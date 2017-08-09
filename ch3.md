@@ -92,12 +92,12 @@ Il n'y a rien d'intrinsèquement mauvais dans les effets si bien que nous les
 utiliserons bientôt à tout va dans les prochains chapitres. C'est la partie sur le *bord* qui a
 mauvaise réputation. L'eau seule n'a rien d'un incubateur à larves, ce sont les parties
 *stagnantes* qui créent des marais répugnants, et je vous l'assure, les effets de *bord* sont
-en tout point similaire pour votre programme.
+en tout point similaires pour votre programme.
 
 > Un *effet de bord* est un changement de l'état du système ou une *interaction visible* avec le
 > monde extérieur qui se produit lors du calcul d'un résultat.
 
-Ceci inclut mais n'est pas limité à / aux:
+Ceci inclut mais n'est pas limité à:
 
 - Modifier un fichier du système
 - Ajouter une entrée à une base de données
@@ -178,7 +178,7 @@ sortie. Ceci illustre toutefois une façon connexe de considérer les fonctions.
 posez peut-être la question des fonctions de plusieurs arguments. En effets, c'est à première
 vue plutôt déroutant mathématiquement. Pour l'heure, nous pouvons simplement
 considérer un tableau ou une structure similaire au pseudo-objet `arguments` comme notre
-entrée. Lorsque nous apprendrons à propos de la *curryfication*, nous verrons comment
+entrée. Lorsque nous apprendrons la *curryfication*, nous verrons comment
 refléter au mieux la définition mathématique d'une fonction.]
 
 Maintenant le fin mot de l'histoire: les fonctions pures *sont* des fonctions au sens
@@ -234,7 +234,7 @@ var pureHttpCall = memoize(function(url, params){
 ```
 
 Ce qui est intéressant ici c'est que nous ne faisons pas réellement l'appel http - nous
-retournons à la place une fonction qui sera à-même de le faire une fois appelée. La fonction
+retournons à la place une fonction qui sera à même de le faire une fois appelée. La fonction
 englobante est pure car elle retournera toujours la même fonction d'exécution pour une même
 entrée: c'est cette fonction retournée qui s'occupera de réaliser concrètement l'appel http
 correspondant à un `url` et `params` donnés. 
